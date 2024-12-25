@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdem Tuhafiye Alışveriş Sitesi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header (Üst Kısım - Logo) */
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Navigation (Menü) */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+
+        /* Ana Sayfa Bölümü */
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+        }
+
+        section h1, section h2 {
+            color: #333;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Ürünler Bölümü */
+        .product {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product p {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #e74c3c;
+        }
+
+        /* İletişim Bölümü */
+        #iletisim a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #iletisim a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer (Alt Kısım) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Mobil Uyumlu Tasarım */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Üst Kısım - Logo) -->
+    <header>
+        <img src="https://github.com/erdemtuhafiye/website/blob/main/logo.webp" alt="Logo" class="logo">
+    </header>
+
+    <!-- Navigation (Menü) -->
+    <nav>
+        <ul>
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#urunler">Ürünler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ana Sayfa Bölümü -->
+    <section id="anasayfa">
+        <h1>Hoşgeldiniz!</h1>
+        <p>En yeni ürünlerimiz ile alışveriş yapın! Kaliteli ve uygun fiyatlarla alışveriş deneyiminizi zenginleştirin.</p>
+    </section>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <p>Alışveriş sitesi olarak, en kaliteli ürünleri en uygun fiyatlarla sunarak müşteri memnuniyetini ön planda tutuyoruz. Güvenli ödeme yöntemleri ve hızlı teslimat ile hizmetinizdeyiz.</p>
+    </section>
+
+    <!-- Ürünler Bölümü -->
+    <section id="urunler">
+        <h2>Ürünler</h2>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun6.png" alt="Ürün 1">
+            <p>Ürün Adı 1</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun.jpg" alt="Ürün 2">
+            <p>Ürün Adı 2</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun1.jpeg" alt="Ürün 3">
+            <p>Ürün Adı 3</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun2.jpg" alt="Ürün 4">
+            <p>Ürün Adı 4</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun3.webp" alt="Ürün 5">
+            <p>Fiyat: 200₺</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun4.webp" alt="Ürün 6">
+            <p>Ürün Adı 6</p>
+        </div>
+        <div class="product">
+            <img src="https://github.com/erdemtuhafiye/website/blob/main/urun5.jpeg" alt="Ürün 7">
+            <p>Ürün Adı 7</p>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>Bize ulaşmak için <a href="mailto:erdemtuhafiye16@gmail.com">email gönderin</a>.</p>
+    </section>
+
+    <!-- Footer (Alt Kısım) -->
+    <footer>
+        <p>&copy; 2024 Erdem Tuhafiye Alışveriş Web Sitesi</p>
+    </footer>
+
+</body>
+</html>
